@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Explore China, Visa-Free",
+    "subtitle": "Premium China Tours for Russian Travelers · 240-Hour Visa-Free Policy",
+    "cta": "Get a Quote",
+    "cta2": "View Tours"
+  },
+  "products": {
+    "title": "Featured Tours",
+    "productA": {
+      "name": "Tech & Azure",
+      "desc": "Shenzhen Tech + Huizhou Shuangyuehu Bay · 8-Day Deep Tour",
+      "price": "¥21,800/person",
+      "tag": "Tech + Beach"
+    },
+    "productB": {
+      "name": "Kung Fu & Glamour",
+      "desc": "Shenzhen + Foshan + Zhuhai · 7-Day Classic Tour",
+      "price": "¥16,800/person",
+      "tag": "Culture + City"
+    },
+    "inquire": "Inquire Now"
+  },
+  "features": {
+    "title": "Why WOW CHINA",
+    "f1": { "title": "240-Hour Visa-Free", "desc": "Russian citizens can enter China without a visa for up to 240 hours" },
+    "f2": { "title": "Pro Photography", "desc": "Professional photographer throughout the trip" },
+    "f3": { "title": "Russian Service", "desc": "Russian-speaking guides and customer service" },
+    "f4": { "title": "Small Group", "desc": "15-18 person boutique groups for quality experience" }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Fill in the form below and we'll reply within 24 hours",
+    "name": "Name",
+    "phone": "Phone / Telegram",
+    "message": "Message",
+    "submit": "Send Inquiry",
+    "or": "Or contact us directly",
+    "tg": "Telegram Chat",
+    "success": "Sent! We'll contact you soon."
+  },
+  "footer": {
+    "rights": "© 2026 WOW CHINA. All rights reserved."
+  }
+}
