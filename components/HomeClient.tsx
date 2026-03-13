@@ -70,8 +70,8 @@ export default function HomeClient({ messages: m, locale }: Props) {
               <div className="relative h-52 overflow-hidden cursor-pointer">
                 <img src="/images/product-a.jpg" alt="Matrix & Azure" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-5">
-                  <div className="text-white/90 text-xs font-semibold mb-1">深圳 · 惠州双月湾</div>
-                  <div className="text-white text-2xl font-black">科技 & 海洋</div>
+                  <div className="text-white/90 text-xs font-semibold mb-1">{m.products.productA.desc}</div>
+                  <div className="text-white text-2xl font-black">{m.products.productA.name}</div>
                 </div>
               </div>
               </Link>
@@ -93,8 +93,8 @@ export default function HomeClient({ messages: m, locale }: Props) {
               <div className="relative h-52 overflow-hidden cursor-pointer">
                 <img src="/images/product-b.jpg" alt="Kung Fu & Neon" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-5">
-                  <div className="text-white/90 text-xs font-semibold mb-1">深圳 · 佛山 · 珠海</div>
-                  <div className="text-white text-2xl font-black">功夫 & 魅影</div>
+                  <div className="text-white/90 text-xs font-semibold mb-1">{m.products.productB.desc}</div>
+                  <div className="text-white text-2xl font-black">{m.products.productB.name}</div>
                 </div>
               </div>
               </Link>

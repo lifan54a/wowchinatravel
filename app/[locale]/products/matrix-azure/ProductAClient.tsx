@@ -31,12 +31,19 @@ export default function ProductAClient({ locale }: Props) {
 
   return (
     <div className="bg-white min-h-screen">
+      {/* Back button */}
+      <div className="bg-gray-900 px-6 py-3">
+        <Link href={`/${locale}`} className="inline-flex items-center gap-2 text-white/80 hover:text-white font-semibold text-sm transition">
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+          {t('返回首页', 'Back to Home', 'На главную')}
+        </Link>
+      </div>
+
       {/* Hero */}
-      <div className="relative h-80 overflow-hidden">
+      <div className="relative h-72 overflow-hidden">
         <img src="/images/product-a.jpg" alt="Matrix & Azure" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         <div className="absolute bottom-0 left-0 w-full p-8">
-          <Link href={`/${locale}`} className="text-white/70 text-sm hover:text-white mb-3 inline-block">← {t('返回首页','Back','На главную')}</Link>
           <div className="text-white/80 text-sm mb-1">{t('精品定制版 · 4人私家小团','Premium Custom · Private Group of 4','Премиум · Мини-группа 4 чел.')}</div>
           <h1 className="text-3xl md:text-5xl font-black text-white">
             {t('极客与蔚蓝', 'Matrix & Azure', 'Матрица и Лазурь')}
@@ -51,7 +58,7 @@ export default function ProductAClient({ locale }: Props) {
         {/* Price + CTA */}
         <div className="bg-red-50 border border-red-100 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between mb-12 gap-4">
           <div>
-            <div className="text-gray-500 text-sm">{t('建议零售价（4人团，含摄影服务）','Recommended retail price (group of 4, photography included)','Рекомендуемая цена (группа 4 чел., фото включено)')}</div>
+            <div className="text-gray-500 text-sm">{t('建议零售价','Recommended retail price','Рекомендуемая цена')}</div>
             <div className="text-4xl font-black text-red-600">¥21,800<span className="text-lg font-normal text-gray-500">/{t('人','person','чел.')}</span></div>
           </div>
           <a href={`/${locale}#contact`}
@@ -118,7 +125,7 @@ export default function ProductAClient({ locale }: Props) {
             </div>
           ))}
           <div className="flex justify-between items-center px-5 py-4 bg-red-600 text-white">
-            <span className="font-bold">{t('建议零售价（含30%利润）','Recommended Retail Price (incl. 30% margin)','Итоговая цена (включая наценку 30%)')}</span>
+            <span className="font-bold">{t('建议零售价','Recommended Retail Price','Итоговая цена')}</span>
             <span className="text-2xl font-black">¥21,800</span>
           </div>
         </div>
