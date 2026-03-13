@@ -6,8 +6,8 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Explore China, Visa-Free",
-    "subtitle": "Premium China Tours for Russian Travelers · 240-Hour Visa-Free Policy",
+    "title": "Explore China, No Visa Required",
+    "subtitle": "Premium China Tours for Russian Travelers · Visa-Free Entry, Stay Up to 30 Days",
     "cta": "Get a Quote",
     "cta2": "View Tours"
   },
@@ -29,7 +29,7 @@
   },
   "features": {
     "title": "Why WOW CHINA",
-    "f1": { "title": "240-Hour Visa-Free", "desc": "Russian citizens can enter China without a visa for up to 240 hours" },
+    "f1": { "title": "Visa-Free Entry", "desc": "Russian citizens can enter China visa-free and stay up to 30 days" },
     "f2": { "title": "Pro Photography", "desc": "Professional photographer throughout the trip" },
     "f3": { "title": "Russian Service", "desc": "Russian-speaking guides and customer service" },
     "f4": { "title": "Small Group", "desc": "15-18 person boutique groups for quality experience" }

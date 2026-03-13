@@ -17,7 +17,7 @@ export default function HomeClient({ messages: m, locale }: Props) {
       <section className="relative bg-gradient-to-br from-gray-900 via-red-950 to-gray-900 text-white overflow-hidden min-h-[600px] flex items-center">
         <div className="relative max-w-6xl mx-auto px-4 py-28 text-center w-full">
           <div className="inline-block bg-red-600/20 border border-red-500/30 text-red-300 text-sm font-semibold px-4 py-1 rounded-full mb-6">
-            🇷🇺 → 🇨🇳 240h Visa-Free · 240小时免签 · Безвиз 240 часов
+            🇷🇺 → 🇨🇳 免签30天 · Visa-Free 30 Days · Безвиз до 30 дней
           </div>
           <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
             {m.hero.title}
