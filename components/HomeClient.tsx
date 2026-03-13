@@ -66,8 +66,35 @@ export default function HomeClient({ messages: m, locale }: Props) {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Product A */}
             <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition">
-              <div className="bg-gradient-to-br from-blue-600 to-cyan-500 h-48 flex items-center justify-center">
-                <span className="text-6xl">🏙️🌊</span>
+              <div className="relative h-52 bg-gradient-to-br from-slate-900 via-blue-900 to-cyan-700 flex items-end overflow-hidden">
+                {/* City skyline SVG silhouette */}
+                <svg className="absolute bottom-0 left-0 w-full opacity-40" viewBox="0 0 800 160" fill="white">
+                  <rect x="0" y="80" width="40" height="80"/>
+                  <rect x="50" y="60" width="30" height="100"/>
+                  <rect x="90" y="40" width="50" height="120"/>
+                  <rect x="150" y="70" width="35" height="90"/>
+                  <rect x="195" y="20" width="60" height="140"/>
+                  <rect x="265" y="50" width="40" height="110"/>
+                  <rect x="315" y="30" width="70" height="130"/>
+                  <rect x="395" y="10" width="80" height="150"/>
+                  <rect x="485" y="45" width="45" height="115"/>
+                  <rect x="540" y="55" width="35" height="105"/>
+                  <rect x="585" y="25" width="55" height="135"/>
+                  <rect x="650" y="60" width="40" height="100"/>
+                  <rect x="700" y="35" width="50" height="125"/>
+                  <rect x="760" y="70" width="40" height="90"/>
+                </svg>
+                {/* Stars */}
+                <div className="absolute inset-0">
+                  {[...Array(20)].map((_, i) => (
+                    <div key={i} className="absolute w-1 h-1 bg-white rounded-full opacity-60"
+                      style={{left: `${(i*37+13)%100}%`, top: `${(i*23+7)%60}%`}} />
+                  ))}
+                </div>
+                <div className="relative z-10 p-5 w-full">
+                  <div className="text-white/90 text-xs font-semibold mb-1">深圳 · 惠州双月湾</div>
+                  <div className="text-white text-2xl font-black">科技 & 海洋</div>
+                </div>
               </div>
               <div className="p-6">
                 <span className="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">{m.products.productA.tag}</span>
@@ -83,8 +110,32 @@ export default function HomeClient({ messages: m, locale }: Props) {
             </div>
             {/* Product B */}
             <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition">
-              <div className="bg-gradient-to-br from-orange-500 to-red-600 h-48 flex items-center justify-center">
-                <span className="text-6xl">🥋🌆</span>
+              <div className="relative h-52 bg-gradient-to-br from-red-900 via-orange-700 to-yellow-600 flex items-end overflow-hidden">
+                {/* Traditional roof silhouette */}
+                <svg className="absolute bottom-0 left-0 w-full opacity-30" viewBox="0 0 800 160" fill="white">
+                  <polygon points="200,80 280,40 360,80"/>
+                  <rect x="220" y="80" width="120" height="80"/>
+                  <polygon points="180,75 280,25 380,75"/>
+                  <rect x="200" y="75" width="160" height="10"/>
+                  <polygon points="440,90 520,50 600,90"/>
+                  <rect x="460" y="90" width="120" height="70"/>
+                  <polygon points="420,85 520,35 620,85"/>
+                  <rect x="440" y="85" width="160" height="10"/>
+                </svg>
+                {/* Lanterns */}
+                <div className="absolute top-4 left-0 w-full flex justify-around px-8">
+                  {[...Array(5)].map((_, i) => (
+                    <div key={i} className="flex flex-col items-center opacity-70">
+                      <div className="w-px h-6 bg-yellow-300"/>
+                      <div className="w-6 h-8 bg-red-500 rounded-full border-2 border-yellow-400"/>
+                      <div className="w-px h-3 bg-yellow-300"/>
+                    </div>
+                  ))}
+                </div>
+                <div className="relative z-10 p-5 w-full">
+                  <div className="text-white/90 text-xs font-semibold mb-1">深圳 · 佛山 · 珠海</div>
+                  <div className="text-white text-2xl font-black">功夫 & 魅影</div>
+                </div>
               </div>
               <div className="p-6">
                 <span className="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full">{m.products.productB.tag}</span>
