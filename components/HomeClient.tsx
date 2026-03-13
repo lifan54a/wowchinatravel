@@ -79,9 +79,9 @@ export default function HomeClient({ messages: m, locale }: Props) {
                 <p className="text-gray-500 text-sm mb-4">{m.products.productA.desc}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-black text-red-600">{m.products.productA.price}</span>
-                  <a href="#contact" className="bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition">
+                  <Link href={`/${locale}/products/matrix-azure`} className="bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition">
                     {m.products.inquire}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -100,9 +100,9 @@ export default function HomeClient({ messages: m, locale }: Props) {
                 <p className="text-gray-500 text-sm mb-4">{m.products.productB.desc}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-black text-red-600">{m.products.productB.price}</span>
-                  <a href="#contact" className="bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition">
+                  <Link href={`/${locale}/products/kungfu-neon`} className="bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition">
                     {m.products.inquire}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
