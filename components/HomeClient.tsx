@@ -66,13 +66,15 @@ export default function HomeClient({ messages: m, locale }: Props) {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Product A */}
             <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition">
-              <div className="relative h-52 overflow-hidden">
-                <img src="/images/product-a.jpg" alt="Matrix & Azure" className="w-full h-full object-cover" />
+              <Link href={`/${locale}/products/matrix-azure`}>
+              <div className="relative h-52 overflow-hidden cursor-pointer">
+                <img src="/images/product-a.jpg" alt="Matrix & Azure" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-5">
                   <div className="text-white/90 text-xs font-semibold mb-1">深圳 · 惠州双月湾</div>
                   <div className="text-white text-2xl font-black">科技 & 海洋</div>
                 </div>
               </div>
+              </Link>
               <div className="p-6">
                 <span className="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">{m.products.productA.tag}</span>
                 <h3 className="text-xl font-black text-gray-900 mt-3 mb-2">{m.products.productA.name}</h3>
@@ -87,13 +89,15 @@ export default function HomeClient({ messages: m, locale }: Props) {
             </div>
             {/* Product B */}
             <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition">
-              <div className="relative h-52 overflow-hidden">
-                <img src="/images/product-b.jpg" alt="Kung Fu & Neon" className="w-full h-full object-cover" />
+              <Link href={`/${locale}/products/kungfu-neon`}>
+              <div className="relative h-52 overflow-hidden cursor-pointer">
+                <img src="/images/product-b.jpg" alt="Kung Fu & Neon" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-5">
                   <div className="text-white/90 text-xs font-semibold mb-1">深圳 · 佛山 · 珠海</div>
                   <div className="text-white text-2xl font-black">功夫 & 魅影</div>
                 </div>
               </div>
+              </Link>
               <div className="p-6">
                 <span className="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full">{m.products.productB.tag}</span>
                 <h3 className="text-xl font-black text-gray-900 mt-3 mb-2">{m.products.productB.name}</h3>
